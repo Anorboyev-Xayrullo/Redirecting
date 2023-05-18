@@ -1,23 +1,31 @@
-divisionentById ("btn").AddEvenListener("click", function (){
-    let btn = document.querySelector(".submit")
-let sum = document.querySelector("h2")
-let summer = document.querySelector(".select0p")
-let number1 = document.querySelector(".num1")
-let number2 = document.querySelector(".num2")
-console.log(summer);
+const n1 = document.querySelector('.Num1');
+const n2 = document.querySelector('.Num2');
 
-switch (summer) {
-    case "plus":
-        sum.innerHTML = Number (number1) + Number (number2) 
-        break;
-        case "minus":
-        sum.innerHTML = Number (number1) - Number (number2) 
-        break;
-        case "increase":
-        sum.innerHTML = Number (number1) * Number (number2) 
-        break;
-        case "division":
-        sum.innerHTML = Number (number1) / Number (number2) 
-        break;
-}
+const submit = document.querySelector('#submit');
+const asign =  document.querySelector('#align');
+const result = document.querySelector('#result');
+
+submit.addEventListener("click", () => {
+    let finalResult;
+
+    const firstNumber = n1.value
+    const secondNumber = n2.value
+    const operation = asign.value
+
+    if(operation == "+") {
+        finalResult = Number(firstNumber) + Number(secondNumber)
+    }
+    else if(operation == "-"){
+        finalResult = Number(firstNumber) - Number(secondNumber)
+    }
+    else if(operation == "*"){
+        finalResult = Number(firstNumber) * Number(secondNumber)
+    }
+    else if(operation == "/"){
+        finalResult = Number(firstNumber) / Number(secondNumber)
+    }
+
+
+
+    result.innerHTML = finalResult
 })

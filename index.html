@@ -6,38 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
+    <script src="./index.js" defer></script>
 </head>
-<body bgcolor="red">
+<body>
 
-  <center>
+    <div class="container">
+        <h1 class="calc">Result</h1>
 
-    <div class="main">
-        <div class="same">
-            <h2>Result</h2>
-                <select id="" class="select0p">
-                    <option value="plus">+</option>
-                    <option value="minus">-</option>
-                    <option value="increase">*</option>
-                    <option value="division">/</option>
-                </select>
-                <div class="doc">
-                    <input type="text" placeholder="Number 1"  class="num1">
-                </div>
-                  <div class="sum">
-                <input type="text" placeholder="Number 2" class="num2">
-                  </div>
-                <button class="submit">Submit</button>
+        <section>
+            <input class="Num1" type="number">
+
+            <select name="" id="align">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+
+            <input class="Num2" type="number">
+        </section>
+
+        <p>Result: <code id="result">0</code></p>
+
+        <div class="Result">
+            <button id="submit">Submit</button>
         </div>
+
     </div>
-
-
-  </center>
-
-
-    <script src="./index.js"></script>
     
-    
-
-
 </body>
 </html>
