@@ -21,12 +21,12 @@ let bajarbrother = () => {
     }
     switch (sum.value) {
         case 'increment':
-        o.textContent= numchabo+numchabot;
+        o.textContent= numchabo*numchabot;
             break;
     }
     switch (sum.value) {
         case 'division':
-        o.textContent= numchabo+numchabot;
+        o.textContent= numchabo/numchabot;
             break;
     }
 }
