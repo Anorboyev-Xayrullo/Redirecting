@@ -6,34 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
-    <script src="./index.js" defer></script>
 </head>
 <body>
+    
 
     <div class="container">
-        <h1 class="calc">Result</h1>
+        <h2>Anorboyev Hayrulloning Calculatri</h2>
 
-        <section>
-            <input class="Num1" type="number">
 
-            <select name="" id="align">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
+        <div class="box">
+            <h3>Result</h3>
+            <select name="" id="#" class="same">
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+                <option value="increment">*</option>
+                <option value="division">/</option>
             </select>
-
-
-            <input class="Num2" type="number">
-        </section>
-
-        <p>Result: <code id="result">0</code></p>
-
-        <div class="Result">
-            <button id="submit">Submit</button>
+            <div>
+                <input type="text" placeholder="Number1" class="num">
+            </div>
+            <input type="text" placeholder="Number2" class="num2">
+           <div>
+            <button class="btn">Submit </button>
+           </div>
         </div>
-
     </div>
-    
+
+
+    <script src="./index.js"></script>
 </body>
 </html>

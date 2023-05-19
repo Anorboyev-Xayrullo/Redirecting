@@ -1,31 +1,36 @@
-const n1 = document.querySelector('.Num1');
-const n2 = document.querySelector('.Num2');
 
-const submit = document.querySelector('#submit');
-const asign =  document.querySelector('#align');
-const result = document.querySelector('#result');
+let sum = document.querySelector(".same")
+let btn = document.querySelector(".btn")
 
-submit.addEventListener("click", () => {
-    let finalResult;
 
-    const firstNumber = n1.value
-    const secondNumber = n2.value
-    const operation = asign.value
-
-    if(operation == "+") {
-        finalResult = Number(firstNumber) + Number(secondNumber)
+let bajarbrother = () => {
+    let o = document.querySelector("h3")
+    let n = document.querySelector(".num");
+    let nt = document.querySelector(".num2");
+    let numchabo = Number(n.value)
+    let numchabot = Number(nt.value)    
+    switch (sum.value) {
+        case 'plus':
+        o.textContent= numchabo+numchabot;
+            break;
     }
-    else if(operation == "-"){
-        finalResult = Number(firstNumber) - Number(secondNumber)
+    switch (sum.value) {
+        case 'minus':
+        o.textContent= numchabo-numchabot;
+            break;
     }
-    else if(operation == "*"){
-        finalResult = Number(firstNumber) * Number(secondNumber)
+    switch (sum.value) {
+        case 'increment':
+        o.textContent= numchabo+numchabot;
+            break;
     }
-    else if(operation == "/"){
-        finalResult = Number(firstNumber) / Number(secondNumber)
+    switch (sum.value) {
+        case 'division':
+        o.textContent= numchabo+numchabot;
+            break;
     }
+}
+
+btn.addEventListener('click', bajarbrother)
 
 
-
-    result.innerHTML = finalResult
-})
