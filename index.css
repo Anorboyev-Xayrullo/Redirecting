@@ -60,4 +60,7 @@ h3{
     .num, .num2 {
         padding: 10px 30px;
     }
+    .box{
+        margin-top: 50px;
+    }
 }
